@@ -1,10 +1,11 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Card from "./components/Card";
 import Checkout from "./components/Checkout";
-import toast from 'react-hot-toast';
+import toast from "react-hot-toast";
+import json from "./data.json"
 
 function App() {
-  const [fetchData, setFetchData] = useState([]);
+
   const [cardsData, setCardsData] = useState([]);
   const [cardsCalculation, setCardsCalculation] = useState({
     creditRemain: 20,
@@ -13,19 +14,11 @@ function App() {
     totalPrice: 0,
   });
 
-  useEffect(() => {
-    const fetchData = async () => {
-      const response = await fetch("https://course-registration-ozq3.onrender.com:3030/data");
-      const data = await response.json();
-      setFetchData(data);
-    };
-    fetchData();
-  }, []);
 
-  const notifySuccessAddCard = () => toast.success('Course added successfully');
-  const notifyErrorCardAlreadyExits = () => toast.error('Course already added');
-  const notifyErrorRemain = () => toast.error("Reached the maximum limit of credit");
-
+  const notifySuccessAddCard = () => toast.success("Course added successfully");
+  const notifyErrorCardAlreadyExits = () => toast.error("Course already added");
+  const notifyErrorRemain = () =>
+    toast.error("Reached the maximum limit of credit");
 
   const addData = (cardData) => {
     const is_Card_Already_Have = cardsData.some(
@@ -33,7 +26,7 @@ function App() {
     );
 
     if (is_Card_Already_Have === true) {
-      notifyErrorCardAlreadyExits()
+      notifyErrorCardAlreadyExits();
       return;
     } else {
       const { creditRemain, courses, totalCredit, totalPrice } =
@@ -46,11 +39,11 @@ function App() {
       const price = totalPrice + cardData.price;
 
       if (credit_Remain < 0) {
-        notifyErrorRemain()
+        notifyErrorRemain();
         return;
       }
 
-      notifySuccessAddCard()
+      notifySuccessAddCard();
       setCardsCalculation({
         creditRemain: credit_Remain,
         courses: courses_,
@@ -73,7 +66,7 @@ function App() {
           <div className="flex flex-row mt-16 gap-x-12">
             {/* card */}
             <div className="w-[61.625rem] flex flex-row flex-wrap gap-[1.5rem]">
-              {fetchData.map((data) => (
+              {json.map((data) => (
                 <Card key={data.id} data={data} addData={addData} />
               ))}
             </div>

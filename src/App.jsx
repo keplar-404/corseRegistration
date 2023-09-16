@@ -15,7 +15,7 @@ function App() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch("/utilis.json");
+      const response = await fetch("http://localhost:3030/data");
       const data = await response.json();
       setFetchData(data);
     };

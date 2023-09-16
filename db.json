@@ -1,0 +1,76 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "name": "Problem-Solving Part",
+      "description": "Enhance your problem-solving skills with this course. Learn effective strategies and techniques to tackle complex problems in programming and real-world scenarios.",
+      "img": "https://i.ibb.co/TtFLLyG/problem-solve.png",
+      "price": 500,
+      "credit": 3
+    },
+    {
+      "id": 2,
+      "name": "Database (MySQL)",
+      "description": "Dive into the world of databases with a focus on MySQL. Master database design, SQL queries, and database management to become a proficient data professional.",
+      "img": "https://i.ibb.co/tX9T4VB/database.png",
+      "price": 1000,
+      "credit": 4
+    },
+    {
+      "id": 3,
+      "name": "AWS",
+      "description": "Explore the cloud computing giant, Amazon Web Services (AWS). Discover its vast array of services and understand how to leverage them for scalable and flexible cloud solutions.",
+      "img": "https://i.ibb.co/P6YWmbd/aws.png",
+      "price": 4000,
+      "credit": 5
+    },
+    {
+      "id": 5,
+      "name": "Software Engineering",
+      "description": "Gain a comprehensive understanding of software engineering principles. Cover topics like software development methodologies, project management, and quality assurance.",
+      "img": "https://i.ibb.co/LQM1Yj5/Software-enginner.png",
+      "price": 1200,
+      "credit": 6
+    },
+    {
+      "id": 6,
+      "name": "Introduction to OOP Python",
+      "description": "Start your journey into the world of object-oriented programming (OOP) using Python. Learn about classes, objects, inheritance, and polymorphism.",
+      "img": "https://i.ibb.co/kxZrL2v/OPP-Python.png",
+      "price": 3500,
+      "credit": 3
+    },
+    {
+      "id": 7,
+      "name": "Basic Data Structures",
+      "description": "Master the fundamental data structures essential for algorithmic problem-solving. Explore arrays, linked lists, stacks, and queues in depth.",
+      "img": "https://i.ibb.co/bLC54Xx/Data-structure.png",
+      "price": 4500,
+      "credit": 3
+    },
+    {
+      "id": 8,
+      "name": "Introduction to C++ for DSA",
+      "description": "Prepare for competitive programming and algorithmic challenges using C++. Understand data structures and algorithmic techniques for solving complex problems.",
+      "img": "https://i.ibb.co/8s2zTSY/C.png",
+      "price": 7000,
+      "credit": 4
+    },
+    {
+      "id": 9,
+      "name": "Introduction to Algorithms",
+      "description": "Study the core algorithms used in computer science. Learn how to analyze and implement algorithms for various computational tasks.",
+      "img": "https://i.ibb.co/zQhH5LQ/Algorithm.png",
+      "price": 12000,
+      "credit": 2
+    },
+    {
+      "id": 10,
+      "name": "Introduction to C Programming",
+      "description": "Get started with the C programming language. Learn the basics of C syntax, control structures, and functions for building software applications.",
+      "img": "https://i.ibb.co/4sjRw2v/C-Programming.png",
+      "price": 5000,
+      "credit": 3
+    }
+  ]
+}
